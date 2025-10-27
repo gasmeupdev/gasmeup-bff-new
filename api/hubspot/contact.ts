@@ -1,4 +1,3 @@
-export const config = { runtime: 'nodejs20.x' };
 import { z } from "zod";
 import type { IncomingMessage, ServerResponse } from "http";
 import { request as undiciRequest } from "undici";
