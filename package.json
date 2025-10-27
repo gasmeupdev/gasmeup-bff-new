@@ -1,14 +1,16 @@
 {
   "name": "gasmeup-bff-new",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "description": "",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo \"Nothing to build\"",
+    "start": "node api/health.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
   "dependencies": {
     "undici": "^6.22.0",
     "zod": "^4.1.12"
@@ -16,9 +18,5 @@
   "devDependencies": {
     "@types/node": "^24.9.1",
     "typescript": "^5.9.3"
-  },
-  "type": "module",
-  "engines": {
-    "node": "18.x"
   }
 }
